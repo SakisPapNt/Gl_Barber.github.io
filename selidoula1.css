@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+}
+
+.firstofall{
+ 
+  padding-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  width: 75px;
+  height: 75px;
+  background-color: #1F2937;
+  margin-top: 0px; 
+  margin-left: 100px;
+}
+
+.img1{
+  width: 15px;
+  height: 15px;
+}
+
+.header{
+  background-image: url(./imgs/wooden.jpg);
+  margin-bottom: 0px;
+  padding-bottom: 55px;
+  outline-style:groove;
+}
+
+.left-link{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 80px;
+  font-weight: 800;
+  background-image: url(./imgs/glbarber.jpg);
+   background-size:cover;
+  border-radius: 40%; 
+  border-style:double;
+}
+
+.center-links{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+}
+
+.right-links{
+  margin-right: 250px;
+}
+
+a:hover{
+  color: beige;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.secondofall{
+  background-image: url(./imgs/wooden2.png);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  margin: 60px;
+  outline-style: inset;
+  border: double;
+  box-shadow:0px 0px 2px 2px #1F2937;
+}
+
+.image{
+  background-color: gray;
+  color: white;
+  margin-right: 170px;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+
+.Liako{
+  margin-left: 5px;
+  width:300px;
+  height: 250px;
+}
+
+
+.btn1{
+  display: flex;
+  background-color: rgb(199, 116, 15);
+  border-radius: 8px;
+  padding: 10px;
+  border: solid 1px white;
+  width: 140px;
+  font-style: oblique;
+  flex-direction: row;
+}
+
+.txt{
+padding-left: 5px;
+padding-top: 5px;
+color: white;
+font-weight: 600;
+}
+
+.img{
+  margin-left: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.btn1:hover{
+  background-image: url(./imgs/wooden3.jpg);
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+  color: rgb(199, 116, 15);
+}
+
+.cont{
+  padding-top: 25px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  background-image: url(./imgs/wooden3.jpg);
+}
+
+.subheader{
+  color: black;
+  margin-left: 15px;
+  
+}
+
+a1 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:burlywood;
+  font-size:medium;
+  font-style: italic;
+  text-shadow: 1px 1px 0 brown;
+}
+
+a {
+  color: darkgoldenrod;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: oblique;
+}
+
+.container {
+  height: 140px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-evenly;  
+  background-image: url(./imgs/goldenscissor.jpg);
+  }
+
+h2{
+  color: burlywood;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+}
+
+.item1 {
+  width: 120px;
+  height: 120px;
+  border: 4px solid burlywood;
+  border-radius: 8px;
+  font-style: oblique;
+  background-image: url(./imgs/razor.jpg);
+  background-size: contain;
+  transition: 0.5s;
+    pointer-events: none;
+    left: -30vw;
+    position: relative;
+    opacity: 0;
+    animation: leftSlide 2s forwards;
+    animation-delay: 2s;
+}
+
+
+
+ .item2 {
+  width: 120px;
+  height: 120px;
+  border: 4px solid burlywood;
+  border-radius: 8px;
+  font-style: oblique;
+  background-image: url(./imgs/andriko_kourema.jpeg);
+  background-size: contain;
+  pointer-events: none;
+ bottom: -30vw;
+  position: relative;
+  opacity: 0;
+  animation: bottomSlide 2s forwards;
+  animation-delay: 2s;
+ }
+
+ .item3 {
+  width: 120px;
+  height: 120px;
+  border: 4px solid burlywood;
+  border-radius: 8px;
+  font-style: oblique;
+  background-image: url(./imgs/black_mask.png);
+  background-size: contain;
+  pointer-events: none;
+  top: -20vw;
+  position: relative;
+  opacity: 0;
+  animation: topSlide 2s forwards;
+  animation-delay: 2s;
+ }
+
+ .item4 {
+  width: 120px;
+  height: 120px;
+  border: 4px solid burlywood;
+  border-radius: 8px;
+  font-style: oblique;
+  background-size: contain;
+  pointer-events: none;
+  right: -20vw;
+  position: relative;
+  opacity: 0;
+  animation: rightSlide 2s forwards;
+  animation-delay: 2s;
+  background-image: url(./imgs/nixia.png);
+ } 
+ 
+ .q1:hover>.item1,
+ .q2:hover>.item2,
+ .q3:hover>.item3,
+ .q4:hover>.item4{
+  transform: scale(1.06);
+  box-shadow: 0px 0px 3px 3px lightgray;
+}
+
+.text{
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 70px;
+}
+
+.third-plate{
+  justify-content: center;
+  background-image: url(./imgs/wooden2.png);
+  margin-top: 80px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: ridge;
+  box-shadow: 0px 0px 2px 3px black;
+}
+
+.text2{
+  margin-top: 40px;
+
+  font-size: 21px;
+  width: 480px;
+  height: 100px;  
+}
+
+.quote{
+  margin-left: 290px;
+  padding-top: 0px;
+  font-weight: 800;
+  text-align: end;
+}
+  
+.fourth-plate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medal-board{
+  background-image: url(./imgs/wooden.jpg);
+  width: 650px;
+  height: 100px;
+  border-radius: 8px;
+  margin: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.text3{
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.first-text{
+  display: flex;
+  justify-content: column;
+  flex-direction: column;
+}
+
+.text4{
+  color: lightgray;
+}
+
+.btn{
+  border-radius: 8px;
+  border: solid 2px white;
+  color: white;
+  background-color: rgb(199, 116, 15);
+  width: 90px;
+  height: 32px;
+  margin-left: 40px;
+}
+
+.btn:hover{
+  background-color: white;
+  color: rgb(199, 116, 15);
+  border: solid 3px black;
+}
+
+.imgs{
+  margin-bottom: 5px;
+  margin-right: 1500px;
+  width: 120px;
+  height: 120px;
+}
+
+
+
+@keyframes leftSlide  {
+  100% {left:0};
+  from {opacity: 0} to {opacity: 1};
+}
+
+@keyframes bottomSlide  {
+  100% {bottom:0};
+  from {opacity: 0} to {opacity: 1};
+}
+
+@keyframes topSlide  {
+  100% {top:0};
+  from {opacity: 0} to {opacity: 1};
+}
+
+
+@keyframes rightSlide {
+  100% {right:0};
+  from {opacity:0} to {opacity:1};
+}
+
